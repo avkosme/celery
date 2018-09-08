@@ -13,6 +13,8 @@ RUN chmod +x /opt/pre.sh
 ADD requirements.txt /opt/requirements.txt
 RUN pip3.6 install -r /opt/requirements.txt
 
+RUN systemctl enable celery.service
+
 COPY docker-entrypoint.sh /usr/local/bin/
 
 RUN /bin/bash -c 'chmod +x /usr/local/bin/docker-entrypoint.sh'

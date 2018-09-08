@@ -12,7 +12,6 @@ chmod +x /opt/start.service.sh && \
 
 chmod 664 /usr/lib/systemd/system/celery.service  && \
 
-systemctl enable celery.service
 systemctl start celery.service
 
 
