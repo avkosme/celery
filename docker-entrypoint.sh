@@ -2,7 +2,7 @@
 
 printenv > /etc/environment && \
 
-pip3.6 install -r && ${REQUIREMENTS}\
+pip3.6 install -r ${REQUIREMENTS} && \
 
 /opt/celery.service.sh && \
 /opt/pre.sh && \
